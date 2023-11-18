@@ -61,6 +61,7 @@
 
 #experiencia .caixa-items .caixa-cartoes .caixa-cartoes-items p{
     display: inline-block;
+    font-weight: bold;
     border-left: 4px solid var(--destaque);
     padding-left: 2%;
     margin: 20px 0;
