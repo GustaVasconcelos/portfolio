@@ -1,0 +1,142 @@
+.caixa-cartao-projeto {
+    width: 600px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--barra-navegacao);
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.caixa-cartao-projeto .cartao-projeto-img {
+    width: 95%;
+    height: 50%;
+}
+
+.caixa-cartao-projeto .cartao-projeto-img .caixa-imagem {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.caixa-cartao-projeto .cartao-projeto-img .caixa-imagem .botao {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--destaque);
+    position: absolute;
+    border: none;
+    top: 50%;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.caixa-cartao-projeto .cartao-projeto-img .caixa-imagem .anterior{
+    left: 2%;
+}
+
+.caixa-cartao-projeto .cartao-projeto-img .caixa-imagem .proximo{
+    right: 2%;
+}
+
+
+.caixa-cartao-projeto .cartao-projeto-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cartao-projeto-descricao {
+    width: 95%;
+    height: 40%;
+}
+
+.cartao-projeto-descricao-texto {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao-projeto-descricao-texto p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 4px;
+    border-left: 4px solid var(--destaque);
+}
+
+.cartao-projeto-descricao-tecnologias {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 4px solid var(--destaque);
+}
+
+.tecnologias-imagem-caixa {
+    position: relative;
+}
+
+.cartao-projeto-descricao-tecnologias img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.tecnologia-nome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    background-color: var(--cor);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.tecnologia-nome p {
+    font-size: 14px;
+    color: var(--barra-navegacao);
+}
+
+.tecnologias-imagem-caixa:hover .tecnologia-nome {
+    opacity: 1;
+}
+
+.cartao-projeto-descricao-links {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartao-projeto-descricao-links a {
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: var(--destaque);
+    border-radius: 2px;
+    color: var(--cor);
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: background-color 0.15s ease-in-out !important;
+}
+
+.cartao-projeto-descricao-links a:hover {
+    background-color: #1E90FF;
+}
+
+@media (max-width:772px) {
+    .caixa-cartao-projeto .cartao-projeto-img img {
+        object-fit: contain;
+    }
+}

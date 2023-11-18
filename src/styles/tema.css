@@ -1,0 +1,62 @@
+.botao-tema {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botao-tema input {
+    position: absolute;
+    opacity: 0;
+}
+
+.botao-tema .lua {
+    z-index: 1;
+    font-size: 20px;
+    color: var(--cor);
+    transition: 1s ease;
+    transition-delay: .4s;
+}
+
+.botao-tema input:checked ~ .lua {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+.botao-tema .sol {
+    z-index: 1;
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.botao-tema input:checked ~ .sol {
+    color: var(--cor);
+    transition-delay: .4s;
+    transform: scale(1) rotate(360deg) ;
+}
+
+
+.botao-tema .alternar {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 8px 60px rgba(0, 0, 0, .1),
+        inset 0 8px 8px rgba(0, 0, 0, .1),
+        inset 0 -4px 4px rgba(0, 0, 0, .1);
+    ;
+    transition: 1s;
+}
+
+.botao-tema input:checked ~ .alternar {
+    background-color: #4f4f4f;
+}

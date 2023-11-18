@@ -1,0 +1,88 @@
+#sobre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0px;
+}
+
+.sobre-caixa-imagem {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-caixa-imagem img {
+    width: 600px;
+    height: 600px;
+}
+
+.sobre-caixa-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sobre-caixa-texto h1 span {
+    padding-bottom: 4px;
+    border-bottom: 4px solid var(--destaque);
+}
+
+.sobre-caixa-texto p {
+    width: 80%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (max-width:1440px) {
+    .sobre-caixa-imagem img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (max-width:1100px) {
+    
+    #sobre{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .sobre-caixa-imagem,
+    .sobre-caixa-texto
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .educacao-caixa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+     
+}
+
+@media (max-width:772px) {
+    .sobre-caixa-imagem img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sobre-caixa-texto h1 {
+        font-size: 30px;
+    }
+
+    .sobre-caixa-texto p {
+        line-height: 24px;
+        font-size: 16px;
+    }
+}

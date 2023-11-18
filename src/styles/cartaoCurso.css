@@ -1,0 +1,83 @@
+.caixa-cartao-curso {
+    width: 400px;
+    height: 550px;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--barra-navegacao);
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.caixa-cartao-curso .cartao-imagem {
+    width: 95%;
+    height: 50%;
+}
+
+.caixa-cartao-curso .cartao-imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.cartao-nome-curso {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cartao-nome-curso h4 {
+    color: var(--cor);
+    border-bottom: 3px solid var(--destaque);
+    padding-bottom: 3px;
+}
+
+.cartao-descricao-curso {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.caixa-cartao-curso p {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--cor);
+    border-left: 3px solid var(--destaque);
+    padding-left: 3px;
+}
+
+.cartao-link-certificado-curso {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cartao-link-certificado-curso a {
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: var(--destaque);
+    border-radius: 2px;
+    color: var(--cor);
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: background-color 0.15s ease-in-out !important;
+}
+
+.cartao-link-certificado-curso a:hover {
+    background-color: #1E90FF;
+}
+
+@media (max-width:772px) {
+    .caixa-cartao-curso .cartao-imagem img{
+        object-fit: contain;
+    }
+    
+}

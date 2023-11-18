@@ -1,0 +1,40 @@
+#cursos {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cursos .titulo {
+    text-align: center;
+    margin-top: 40px;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursos .titulo h1 {
+    font-size: 45px;
+    padding-bottom: 4px;
+    border-bottom: 4px solid var(--destaque);
+}
+
+#cursos .caixa-cartoes {
+    padding: 2rem 0px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:772px) {
+    #cursos .titulo h1 {
+        font-size: 30px;
+    }
+}
